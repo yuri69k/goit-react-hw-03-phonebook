@@ -22,7 +22,7 @@ class App extends Component {
     if (parsedContacts) this.setState({ contacts: [...parsedContacts] });
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(_, prevState) {
     const { contacts } = this.state;
 
     if (prevState.contacts.length!== contacts.length)
